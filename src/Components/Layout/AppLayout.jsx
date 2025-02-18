@@ -82,13 +82,13 @@ export default function LinkedInHeader() {
       >
         <Toolbar className="container d-flex justify-content-between align-items-center py-1">
           <Box className="d-flex align-items-center">
-          <Link to="/">
-            <Box>
-              <LinkedInIcon
-                className="d-none d-sm-block"
-                sx={{ fontSize: "2.5rem", color: "#0077b5" }}
-              />
-            </Box>
+            <Link to="/">
+              <Box>
+                <LinkedInIcon
+                  className="d-none d-sm-block"
+                  sx={{ fontSize: "2.5rem", color: "#0077b5" }}
+                />
+              </Box>
             </Link>
             <Box className="d-block me-2 d-sm-none">
               <Avatar alt="Noor Mustafa" src={ProfilePicture} />
@@ -184,66 +184,72 @@ export default function LinkedInHeader() {
                 Me
               </Typography>
               <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{ vertical: "top", horizontal: "right" }}
-                keepMounted
-                transformOrigin={{ vertical: "top", horizontal: "right" }}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <Box width={"30vh"} p={1}>
-                  <Box className="d-flex align-items-center mb-2">
-                    <Avatar
-                      src={ProfilePicture}
-                      sx={{ width: 60, height: 60 }}
-                    />
-                    <Box ml={2}>
-                      <Typography variant="subtitle1" fontWeight="bold">
-                        Noor Mustafa Jatoi
-                      </Typography>
-                      <Typography variant="body2">
-                        Frontend Developer | HTML5 | CSS3 | JavaScript |
-                        React.js
-                      </Typography>
-                    </Box>
-                  </Box>
-                  <Box>
-                    <Link to="/ProfilePage" className="text-decoration-none">
-                      <Button fullWidth
-                        variant="outlined"
-                        className="text-small rounded-3 text-center text-primary rounded-pill"
-                      >
-                        View Profile
-                      </Button>
-                    </Link>
-                  </Box>
-                  <Divider className="my-2 w-100" />
-                  <Box>
-                    <Typography variant="subtitle2" fontWeight="bold">
-                      Account
-                    </Typography>
-                    <Typography variant="body2">
-                      Try 1 month of Premium for PKR0
-                    </Typography>
-                    <Typography variant="body2">Settings & Privacy</Typography>
-                    <Typography variant="body2">Help</Typography>
-                    <Typography variant="body2">Language</Typography>
-                  </Box>
-                  <Divider className="my-2 w-100" />
+  id="menu-appbar"
+  anchorEl={anchorEl}
+  anchorOrigin={{ vertical: "top", horizontal: "right" }}
+  keepMounted
+  transformOrigin={{ vertical: "top", horizontal: "right" }}
+  open={Boolean(anchorEl)}
+  onClose={handleClose}
+>
+  <div className="container-fluid p-3" style={{ width: "100%", maxWidth: "320px" }}>
+    {/* Profile Section */}
+    <div className="row align-items-center mb-3">
+      <div className="col-auto">
+        <Avatar src={ProfilePicture} sx={{ width: 60, height: 60 }} />
+      </div>
+      <div className="col">
+        <Typography variant="subtitle1" fontWeight="bold">
+          Noor Mustafa Jatoi
+        </Typography>
+        <Typography variant="body2">
+          Frontend Developer | HTML5 | CSS3 | JavaScript | React.js
+        </Typography>
+      </div>
+    </div>
 
-                  <Box mt={1}>
-                    <Typography variant="subtitle2" fontWeight="bold">
-                      Manage
-                    </Typography>
-                    <Typography variant="body1">Posts & Activity</Typography>
-                    <Typography variant="body1">Job Posting Account</Typography>
-                    <Typography variant="body1" color="error">
-                      Sign Out
-                    </Typography>
-                  </Box>
-                </Box>
-              </Menu>
+    {/* Profile Button */}
+    <div className="row">
+      <div className="col">
+        <Link to="/ProfilePage" className="text-decoration-none">
+          <Button
+            fullWidth
+            variant="outlined"
+            className="text-small rounded-3 text-primary rounded-pill"
+          >
+            View Profile
+          </Button>
+        </Link>
+      </div>
+    </div>
+
+    <Divider className="my-3" />
+
+    {/* Account Section */}
+    <div className="row">
+      <div className="col">
+        <Typography variant="subtitle2" fontWeight="bold">Account</Typography>
+        <Typography variant="body2" className="mt-1">Try 1 month of Premium for PKR0</Typography>
+        <Typography variant="body2" className="mt-1">Settings & Privacy</Typography>
+        <Typography variant="body2" className="mt-1">Help</Typography>
+        <Typography variant="body2" className="mt-1">Language</Typography>
+      </div>
+    </div>
+
+    <Divider className="my-3" />
+
+    {/* Manage Section */}
+    <div className="row">
+      <div className="col">
+        <Typography variant="subtitle2" fontWeight="bold">Manage</Typography>
+        <Typography variant="body2" className="mt-1">Posts & Activity</Typography>
+        <Typography variant="body2" className="mt-1">Job Posting Account</Typography>
+        <Typography variant="body2" className="mt-1 text-danger">Sign Out</Typography>
+      </div>
+    </div>
+  </div>
+</Menu>
+
             </Box>
           </Box>
           <Box className="d-flex align-items-center">

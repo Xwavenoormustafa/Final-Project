@@ -50,7 +50,7 @@ const JobsRightSection = () => {
                     color="primary"
                     className="fw-bold"
                   >
-                    Frontend Developer
+                    Frontend Developer JavaScript
                   </Typography>
                   <Typography variant="body2">
                     GT Ecom · Pakistan (Remote)

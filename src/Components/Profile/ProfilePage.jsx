@@ -16,7 +16,6 @@ import {
   Select,
   FormControl,
 } from "@mui/material";
-import QR_Code from "../Assets/QR_Code.jpeg";
 import HiringImg from "../Assets/HiringImage.png";
 import CoverPhoto from "../../Components/Assets/baner.jpg";
 import ProfilePicture from "../Assets/White Elegant Minimalistic Background Twitter Profile Picture.png";
@@ -28,22 +27,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import PeopleIcon from "@mui/icons-material/People";
 import SettingsIcon from "@mui/icons-material/Settings";
 import xWaveLogo from "../Assets/xwavepak_logo.jpeg";
-import certificate from "../Assets/certificate.jpeg";
 import AddIcon from "@mui/icons-material/Add";
-
 import SideProfile from "../Assets/side-profile.jpeg";
-
 import SideProfile2 from "../Assets/side-profile 2.jpeg";
 import SideProfile4 from "../Assets/side-profile4.jpeg";
 import SecurityIcon from "@mui/icons-material/Security";
-import Killer_Tools from "../Assets/Killer Tools.jpeg";
-import Todo_Img from "../Assets/Todo_img.jpeg";
 import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 import Microsoft_Logo from "../Assets/microsoft_logo.jpeg";
-import Ibex_Logo from "../Assets/Ibex_Logo.jpeg";
 import HelpIcon from "@mui/icons-material/Help";
-import FolderIcon from "@mui/icons-material/Folder";
 import { Button } from "react-bootstrap";
+import postImg3 from "../Assets/Killer Tools.jpeg";
 
 const ProfilePage = () => {
   return (
@@ -128,24 +121,17 @@ const ProfilePage = () => {
                 </Box>
 
                 <Box className="d-flex gap-3 p-3">
-                  <Card
-                    className="shadow-sm"
-                    style={{ width: "400px", backgroundColor: "#E3F2FD" }}
-                  >
+                  
+                  <Card className="shadow-sm border" style={{ width: "400px" }}>
                     <CardContent className="position-relative">
                       <Typography variant="subtitle2" className="fw-bold">
-                        Open to work
+                        Share that you’re attract qualified candidates.
                       </Typography>
                       <Typography variant="body2">
                         Associate and Marketing Associate roles
                       </Typography>
-                      Show details
-                      <IconButton
-                        size="small"
-                        className="position-absolute top-0 end-0 m-2"
-                      >
-                        <EditIcon fontSize="small" />
-                      </IconButton>
+                      Get Started
+                      
                     </CardContent>
                   </Card>
                   <Card className="shadow-sm border" style={{ width: "400px" }}>
@@ -157,12 +143,7 @@ const ProfilePage = () => {
                         Associate and Marketing Associate roles
                       </Typography>
                       Get Started
-                      <IconButton
-                        size="small"
-                        className="position-absolute top-0 end-0 m-2"
-                      >
-                        <EditIcon fontSize="small" />
-                      </IconButton>
+                      
                     </CardContent>
                   </Card>
                 </Box>
@@ -239,16 +220,12 @@ const ProfilePage = () => {
                   </Typography>
                   <Box className="mt-2 p-3">
                     <Typography variant="body2">
-                      I am pursuing Bachelors in Medical Sciences and I am
-                      currently enrolled in a 12 months Frontend Web Development
-                      course with xWave, a tech initiative to eradicate poverty
-                      and empower youth of Pakistan with IT courses and skills.
-                      Proficient in HTML, CSS, and Bootstrap, I am successfully
-                      designed 8+ websites and landing pages.
-                    </Typography>
-                    <Typography className="mt-2 rounded-pill">...</Typography>
-                    <Typography className="position-absolute bottom-0 end-0 m-2 fw-normal">
-                      ... See more
+                      I am Bachelors in Engenearing and I am currently enrolled
+                      in a 12 months Frontend Web Development course with xWave,
+                      a tech initiative to eradicate poverty and empower youth
+                      of Pakistan with IT courses and skills. Proficient in
+                      HTML, CSS, and Bootstrap, I am successfully designed 8+
+                      websites and landing pages.
                     </Typography>
                   </Box>
                 </CardContent>
@@ -305,16 +282,13 @@ const ProfilePage = () => {
                     </Button>
                   </Box>
 
-                 
-
                   <Box className="border-bottom pb-3 mb-3">
                     <Typography variant="body2" className="fw-bold">
-                      Generate and Copy Random Secure Passwords with
-                      JavaScript 
+                      Generate and Copy Random Secure Passwords with JavaScript
                     </Typography>
                     <Box className="d-flex align-items-center">
                       <img
-                        src={QR_Code}
+                        src={postImg3}
                         className="me-3 rounded"
                         style={{
                           width: "50px",
@@ -433,8 +407,6 @@ const ProfilePage = () => {
                           Communication, Time Management and +2 skills
                         </Typography>
                       </div>
-
-                     
                     </div>
                   </div>
                 </CardContent>
@@ -519,10 +491,8 @@ const ProfilePage = () => {
                         add-to-cart functionality, form validation, and
                         sign-up/login functionality with local storage.
                       </Typography>
-                     
                     </Box>
                   </Box>
-
 
                   <Divider className="my-2 w-100" />
                   <Typography className="mt-3 fw-bold text-center">
@@ -572,8 +542,6 @@ const ProfilePage = () => {
                           Frontend Development Fellow
                         </Typography>
                       </Box>
-
-                    
 
                       <Typography
                         variant="body2"
@@ -649,8 +617,6 @@ const ProfilePage = () => {
                         </CardContent>
                       </Card>
                     </Grid>
-
-                    
                   </Grid>
                   <Typography className="mt-3 fw-bold text-center">
                     Show all companies →
@@ -674,7 +640,6 @@ const ProfilePage = () => {
                   <EditIcon />
                 </Box>
               </Card>
-              
 
               <Card sx={{ borderRadius: 3, boxShadow: 1, marginTop: 3 }}>
                 <CardContent sx={{ padding: 0 }}>
@@ -704,8 +669,8 @@ const ProfilePage = () => {
                       Saleem
                     </Typography>
                     <Typography variant="body2">
-                      Administrator || Graphic Designer || Social Media Manager ||
-                      Video Editing 
+                      Administrator || Graphic Designer || Social Media Manager
+                      || Video Editing
                     </Typography>
                     <Button
                       className="rounded-pill mt-2 text-dark border-dark"
@@ -716,11 +681,11 @@ const ProfilePage = () => {
                   </Box>
                 </Box>
                 <Divider className="my-2 w-100" />
-                
+
                 <Divider className="my-2 w-100" />
-               
+
                 <Divider className="my-2 w-100" />
-               
+
                 <Divider className="my-2 w-100" />
               </Box>
               {/* Third section */}
@@ -756,8 +721,8 @@ const ProfilePage = () => {
                       Ashish Mishal
                     </Typography>
                     <Typography variant="body2">
-                      SDE @ Suma Soft | 60k LinkedIn | AI & Tech | MERN Developer
-                      | Open for Collaboration🤝
+                      SDE @ Suma Soft | 60k LinkedIn | AI & Tech | MERN
+                      Developer | Open for Collaboration🤝
                     </Typography>
                     <Button
                       className="rounded-pill mt-2 text-dark border-dark"
@@ -768,7 +733,7 @@ const ProfilePage = () => {
                   </Box>
                 </Box>
                 <Divider className="my-2 w-100" />
-                
+
                 <Divider className="my-2 w-100" />
                 <Box className="d-flex align-items-center mb-2">
                   <Avatar src={SideProfile4} sx={{ width: 60, height: 60 }} />

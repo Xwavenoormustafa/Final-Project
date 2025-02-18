@@ -22,17 +22,17 @@ export default function HomeSection() {
           backgroundColor: "#fff",
           borderRadius: "8px",
           boxShadow: "0 0 5px rgba(0,0,0,0.1)",
-          overflow: "hidden", // Ensures the rounded corners apply to the cover photo
+          overflow: "hidden", 
         }}
       >
         <Card>
           <CardContent sx={{ padding: 0 }}>
-            {/* Cover Photo */}
+        
             <Box
               sx={{
-                height: "100px", // Adjust height as needed
-                backgroundColor: "#ddd", // Fallback background
-                backgroundImage: `url(${image})`, // Correct way to interpolate the variable inside the string
+                height: "100px", 
+                backgroundColor: "#ddd", 
+                backgroundImage: `url(${image})`, 
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

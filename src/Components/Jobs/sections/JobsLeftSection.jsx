@@ -37,11 +37,6 @@ const JobsLeftSection = () => {
           <Link href="#">Accessibility</Link>
           <Link href="#">Help Center</Link>
           <Link href="#">Privacy & Terms</Link>
-          <Link href="#">Ad Choices</Link>
-          <Link href="#">Advertising</Link>
-          <Link href="#">Business Services</Link>
-          <Link href="#">Get the LinkedIn app</Link>
-          <Link href="#">More</Link>
         </Typography>
         <Typography variant="body2" className="mt-4 text-secondary">
           LinkedIn Corporation &copy; 2025
